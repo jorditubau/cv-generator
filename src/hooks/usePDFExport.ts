@@ -10,6 +10,9 @@ export function usePDFExport() {
     setIsExporting(true);
     try {
       await exportToPDF(previewRef.current, filename || 'cv.pdf');
+    } catch (err) {
+      console.error('PDF export failed:', err);
+      alert('Error al generar el PDF: ' + (err instanceof Error ? err.message : String(err)));
     } finally {
       setIsExporting(false);
     }
