@@ -54,21 +54,3 @@ Open http://127.0.0.1:5175/
 npm run build
 npm run preview
 ```
-
-## Project Structure
-
-```
-/src
-  /components
-    /form         # PersonalInfo, Experience, Education, Skills, Projects, Certifications
-    /preview      # CVPreview, Template1 (Classic), Template2 (Modern), Template3 (Minimal)
-    /ui           # TagInput, DraggableList, ImageUpload, ColorPicker
-  /store          # cvStore.ts (zustand)
-  /hooks          # useAutoSave.ts, usePDFExport.ts
-  /utils          # urlEncoder.ts, pdfExport.ts, sampleData.ts
-  /types          # cv.types.ts
-```
-
-## Screenshots
-
-_Add screenshots here after running the app_
